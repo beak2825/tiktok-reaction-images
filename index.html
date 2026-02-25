@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TikTok Reaction Images Database</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #232323;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background: #b4b4b4;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .top-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .twitter {
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+    }
+
+    .search {
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 40px;
+    }
+
+    .card {
+        background: #f5f5f5;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        transition: transform 0.2s ease;
+        position: relative;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+    }
+
+    .filename {
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+        word-break: break-word;
+    }
+
+    .download-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #1da1f2;
+        border: none;
+        border-radius: 6px;
+        padding: 6px 8px;
+        cursor: pointer;
+    }
+
+    .download-btn svg {
+        fill: white;
+        width: 16px;
+        height: 16px;
+    }
+
+</style>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0CQMETY6B0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0CQMETY6B0');
+</script>
+</head>
+<body>
+
+<header>
+    <h1>TikTok Reaction Images Database</h1>
+    <div class="top-right">
+        <input type="text" class="search" placeholder="Search images..." id="searchInput">
+        <a href="https://twitter.com/jarivizero" target="_blank">
+            <svg class="twitter" viewBox="0 0 24 24">
+                <path fill="#1DA1F2"
+                d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.37 8.5 8.5 0 01-2.7 1.03 4.28 4.28 0 00-7.3 3.9A12.14 12.14 0 013 4.89a4.28 4.28 0 001.32 5.71 4.25 4.25 0 01-1.94-.54v.05a4.28 4.28 0 003.44 4.19 4.3 4.3 0 01-1.93.07 4.28 4.28 0 004 2.98A8.6 8.6 0 012 19.54a12.13 12.13 0 006.57 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19-.01-.37-.02-.56A8.72 8.72 0 0022.46 6z"/>
+            </svg>
+        </a>
+    </div>
+</header>
+
+<div class="grid" id="imageGrid"></div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "TikTok Reaction Images Database",
+  "description": "Collection of TikTok reaction meme images.",
+  "url": "http://beak2825.github.io/tiktok-reaction-images/",
+  "hasPart": [
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/0dayswithoutnonsense_mrkrabs.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/IMG_7393.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/adam-sandler-cars-meme.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/an-iq-too-high.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/android_skull.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/angry-birds-listening-music-note-in-ear-glowing-ai-tiktok-meme.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/anton-ego-ratatouille-realization.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/army-of-robots-looking-meme.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/baby-same-kid-split-photo-pixelated.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/benson_understanding.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/black-guy-in-suit-black-guy.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/blackindividualsayingme.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/blind-leading-the-blind.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/brader-suspicion.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/bro_is_typing_shit.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/bro_just_typing_shit.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/cherry-on-top-of-cake-tiktok.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/choco-musk.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/danganronpa-execution-thick-of-it-thomas.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/despicable-me-el-macho-villain-gru.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/dexter_wearewhatweare.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/dig-diamonds-quit-meme.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/doakes-original.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/doakes-surprised.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/doakes_suspicion.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/doesheknow_pauldano.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/dog_sun_surprised.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/drake-computer-oh-tiktok.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/everybody-hates-chris-terry-crews-wasted-money.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/everyone-is-here.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/gecko-glasses-dark-and-white-tiktok.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/golden_freddy_its_us.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/guy-with-light-glasses-meta-ai-glasses-im-not-recording.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/guyrunningatscreen_mining_diamonds.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/hasbulla-kratos-staring-meme-edited.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/he-hid-for-30-years.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/he-knew-for-30-years.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/i-am-mega-fuming.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/idontfuckingcare_squidgames_edited.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/if-we-play-loud-people-might-think-we-are-good.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/if-you-mash-strawberries-danganronpa.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/imout_daymondjohn.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/imunsure_daymondjohn.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/ishowspeed-useless-info-tiktok-meme.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/kwebblekop-folk-crying.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/lois-911-was-bad.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/lois_good.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/lois_speed_phone.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/meg-noise-pollution-2.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/meg_noise_pollution_menstrual_cycle.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/mrbeast_face.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/mrbeast_squish.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/ohio-impressed-ohio.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/people-reading-hitler-dead-newspaper.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/peter-thats-not-a-meme-thats-just-porn.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/peter-thats-not-a-meme-thats-just-tuff.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/plaque-boy-max-feels-the-aura-tiktok.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/scout-tf2-face-meme.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/speed-looks-at-phone.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/speed-random-kid.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/speed-reading-egyptian-hieroglyphics-ancient-text-ishowspeed-gibberish.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/speedtryingnottolaugh.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/spongebob-patrick-eyes-arabic-text-unc-posting-season6ep11at1543.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/spongebob_breath_but_when_i.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/spongebob_eyes_moved.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/squidward_laughing_hard.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/stewie_simpsons_since_1994_admit_it_isnt_funny_anymore.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/tel-aviv-impressed-tiktok.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/this-is-the-best-shit-ive-ever-fucking-seen-albert-einstein.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/trevor-larkin-empty-your-backpack.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/truth-lie-bullshit-meter-tiktok.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/wait_a_minute_im_white.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/wbush_911.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/what-did-he-see-baby-yoda-tiktok.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/whos-gonna-tell-him-this-is-not-tuff-spongebob.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/worstcommentever.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/worstcommentever_deleteyouraccount.gif"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/wow-kid-omegle-watches.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/writing_feather_smiling_meme.png"},
+    {"@type":"ImageObject","contentUrl":"https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/you_poster_2018.png"}
+  ]
+}
+</script>
+<script>
+const baseURL = "https://raw.githubusercontent.com/beak2825/tiktok-reaction-images/main/images/";
+const grid = document.getElementById("imageGrid");
+const searchInput = document.getElementById("searchInput");
+
+const imageFiles = [
+"0dayswithoutnonsense_mrkrabs.png",
+"IMG_7393.png",
+"adam-sandler-cars-meme.png",
+"an-iq-too-high.png",
+"android_skull.png",
+"angry-birds-listening-music-note-in-ear-glowing-ai-tiktok-meme.png",
+"anton-ego-ratatouille-realization.png",
+"army-of-robots-looking-meme.png",
+"baby-same-kid-split-photo-pixelated.png",
+"benson_understanding.png",
+"black-guy-in-suit-black-guy.png",
+"blackindividualsayingme.png",
+"blind-leading-the-blind.png",
+"brader-suspicion.png",
+"bro_is_typing_shit.png",
+"bro_just_typing_shit.png",
+"cherry-on-top-of-cake-tiktok.png",
+"choco-musk.png",
+"danganronpa-execution-thick-of-it-thomas.png",
+"despicable-me-el-macho-villain-gru.png",
+"dexter_wearewhatweare.png",
+"dig-diamonds-quit-meme.png",
+"doakes-original.png",
+"doakes-surprised.png",
+"doakes_suspicion.png",
+"doesheknow_pauldano.png",
+"dog_sun_surprised.png",
+"drake-computer-oh-tiktok.png",
+"everybody-hates-chris-terry-crews-wasted-money.png",
+"everyone-is-here.png",
+"gecko-glasses-dark-and-white-tiktok.png",
+"golden_freddy_its_us.png",
+"guy-with-light-glasses-meta-ai-glasses-im-not-recording.png",
+"guyrunningatscreen_mining_diamonds.png",
+"hasbulla-kratos-staring-meme-edited.png",
+"he-hid-for-30-years.png",
+"he-knew-for-30-years.png",
+"i-am-mega-fuming.png",
+"idontfuckingcare_squidgames_edited.png",
+"if-we-play-loud-people-might-think-we-are-good.png",
+"if-you-mash-strawberries-danganronpa.png",
+"imout_daymondjohn.png",
+"imunsure_daymondjohn.png",
+"ishowspeed-useless-info-tiktok-meme.png",
+"kwebblekop-folk-crying.png",
+"lois-911-was-bad.png",
+"lois_good.png",
+"lois_speed_phone.png",
+"meg-noise-pollution-2.png",
+"meg_noise_pollution_menstrual_cycle.png",
+"mrbeast_face.png",
+"mrbeast_squish.png",
+"ohio-impressed-ohio.png",
+"people-reading-hitler-dead-newspaper.png",
+"peter-thats-not-a-meme-thats-just-porn.png",
+"peter-thats-not-a-meme-thats-just-tuff.png",
+"plaque-boy-max-feels-the-aura-tiktok.png",
+"scout-tf2-face-meme.png",
+"speed-looks-at-phone.png",
+"speed-random-kid.png",
+"speed-reading-egyptian-hieroglyphics-ancient-text-ishowspeed-gibberish.png",
+"speedtryingnottolaugh.png",
+"spongebob-patrick-eyes-arabic-text-unc-posting-season6ep11at1543.png",
+"spongebob_breath_but_when_i.png",
+"spongebob_eyes_moved.png",
+"squidward_laughing_hard.png",
+"stewie_simpsons_since_1994_admit_it_isnt_funny_anymore.png",
+"tel-aviv-impressed-tiktok.png",
+"this-is-the-best-shit-ive-ever-fucking-seen-albert-einstein.png",
+"trevor-larkin-empty-your-backpack.png",
+"truth-lie-bullshit-meter-tiktok.png",
+"wait_a_minute_im_white.png",
+"wbush_911.png",
+"what-did-he-see-baby-yoda-tiktok.png",
+"whos-gonna-tell-him-this-is-not-tuff-spongebob.png",
+"worstcommentever.png",
+"worstcommentever_deleteyouraccount.gif",
+"wow-kid-omegle-watches.png",
+"writing_feather_smiling_meme.png",
+"you_poster_2018.png"
+];
+
+let imageData = imageFiles.map(name => ({
+    name: name,
+    url: baseURL + name
+}));
+
+function renderImages(data) {
+    grid.innerHTML = "";
+    data.forEach(img => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.setAttribute("data-name", img.name.toLowerCase());
+
+        const image = document.createElement("img");
+        image.src = img.url;
+        image.loading = "lazy";
+        image.onclick = () => window.open(img.url, "_blank");
+
+        const filename = document.createElement("div");
+        filename.className = "filename";
+        filename.textContent = img.name;
+
+        const downloadBtn = document.createElement("button");
+        downloadBtn.className = "download-btn";
+        downloadBtn.innerHTML = `
+            <svg viewBox="0 0 24 24">
+                <path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/>
+            </svg>
+        `;
+        downloadBtn.onclick = (e) => {
+            e.stopPropagation();
+            const a = document.createElement("a");
+            a.href = img.url;
+            a.download = img.name;
+            a.click();
+        };
+
+        card.appendChild(image);
+        card.appendChild(downloadBtn);
+        card.appendChild(filename);
+        grid.appendChild(card);
+    });
+}
+
+searchInput.addEventListener("input", () => {
+    const term = searchInput.value.toLowerCase();
+    const filtered = imageData.filter(img =>
+        img.name.toLowerCase().includes(term)
+    );
+    renderImages(filtered);
+});
+
+renderImages(imageData);
+</script>
+<img src="https://views-counter.vercel.app/badge?pageId=https%3A%2F%2Fbeak2825%2Egithub%2Eio%2Ftiktok-reaction-images%2F&leftColor=000000&rightColor=0adb3f&type=total&label=Site%20VIEWS&style=none" alt="Views Counter">
+<img src="https://views-counter.vercel.app/badge?pageId=https%3A%2F%2Fbeak2825%2Egithub%2Eio%2Ftiktok-reaction-images%2F&leftColor=000000&rightColor=0adb3f&type=unique&label=Site%20UNIQUE&style=none" alt="Views Counter">
+</body>
+</html>
